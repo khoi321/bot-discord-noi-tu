@@ -334,3 +334,8 @@ client.login('YOUR_BOT_TOKEN'); // Thay thế YOUR_BOT_TOKEN thành token bot c�
 - Sau khi chạy `node .` trên Termina ở VS Code thì bạn sẽ thấy bot online.
 - Chạy lệnh `!!noitu` để cài đặt,
 - Chạy lệnh `!!resetnoitu` để reset nối từ.
+# FAQ
+<details>
+  <summary>Cách mở Terminal trên VS Code</summary>
+  Xem hướng dẫn [tại đây)[https://youtu.be/cDsXZ_PEDGk?si=k8pnks03kRx8-0QS]
+</details>
