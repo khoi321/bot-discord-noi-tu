@@ -50,4 +50,35 @@ Bot nối từ Discord bằng tiếng Anh. Chạy trên ngôn ngữ JavaScript.
       ```
     - Đảm bảo rằng các phiên bản của Node.js và npm (Node Package Manager) đã được cài đặt thành công.
     - Tham khảo thêm về cách cài đặt môi trường [tại đây](https://www.youtube.com/results?search_query=c%C3%A1ch+c%C3%A0i+%C4%91%E1%BA%B7t+m%C3%B4i+js+%2F+how+to+install+js+inviroment)
+- **Truy cập dự án trên VS Code:**
+  - **Cách 1**:
+    - Mở Visual Studio Code (VS Code).
+    - Chọn **"File"** từ menu trên cùng.
+    - Chọn **"Open Folder..."**.
+    - Điều hướng đến thư mục chứa dự án mà bạn đã tải về hoặc clone từ GitHub.
+    - Chọn thư mục dự án và nhấp vào **"Select Folder"** (hoặc **"Open"** trên macOS).
+    - Dự án của bạn sẽ được mở trong VS Code.
 
+  - **Cách 2**:
+    - Kéo và thả thư mục dự án từ File Explorer (Windows) hoặc Finder (macOS) vào cửa sổ VS Code.
+    - VS Code sẽ tự động mở thư mục dự án và hiển thị nội dung của nó trong giao diện.
+
+  - **Cách 3**:
+    - Mở terminal tích hợp trong VS Code bằng cách nhấn `Ctrl + `` (hoặc `Cmd + `` trên macOS).
+    - Sử dụng lệnh `cd` để điều hướng đến thư mục chứa dự án.
+      ```sh
+      cd <tên_thư_mục>
+      ```
+    - Chạy lệnh sau để mở thư mục dự án trong VS Code:
+      ```sh
+      code .
+      ```
+    - Dự án sẽ được mở trong một cửa sổ mới của VS Code.
+
+  - **Cách 4**:
+    - Mở File Explorer (Windows) hoặc Finder (macOS).
+    - Điều hướng đến thư mục chứa dự án.
+    - Nhấp chuột phải vào thư mục dự án.
+    - Chọn **"Open with Code"** từ menu.
+    - Thư mục dự án sẽ được mở trong VS Code.
+  - Tìm hiểu thêm về cách [sử dụng VS Code](https://www.youtube.com/results?search_query=c%C3%A1ch+m%E1%BB%9F+th%C6%B0+m%E1%BB%A5c+tr%C3%AAn+VS+code)
