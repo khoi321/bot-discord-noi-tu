@@ -82,7 +82,8 @@ Bot nối từ Discord bằng tiếng Anh. Chạy trên ngôn ngữ JavaScript.
     - Chọn **"Open with Code"** từ menu.
     - Thư mục dự án sẽ được mở trong VS Code.
   - Tìm hiểu thêm về cách [sử dụng VS Code](https://www.youtube.com/results?search_query=c%C3%A1ch+m%E1%BB%9F+th%C6%B0+m%E1%BB%A5c+tr%C3%AAn+VS+code)
-# Chạy chương trình
+# Chỉnh sửa trạng thái
+**Truy cập vào file `bot.mjs`**
 - **Chỉnh sửa trạng thái (status) của bot:**
   - **Trạng thái:**
     - `status: 'online'`: Bot hoạt động bình thường (xanh lá).
@@ -117,3 +118,82 @@ client.user.setPresence({
   }],
 });
 ```
+## Lấy và thay thế TOKEN
+
+### Lấy TOKEN Discord
+
+1. Truy cập vào [Discord Developer Portal](https://discord.com/developers/applications).
+2. Đăng nhập bằng tài khoản Discord của bạn nếu chưa đăng nhập.
+3. Chọn ứng dụng bot của bạn từ danh sách các ứng dụng.
+4. Vào phần **Bot** trong menu bên trái.
+5. Nhấp vào nút **Copy** dưới mục **TOKEN** để sao chép TOKEN của bạn. **Lưu ý:** Đừng chia sẻ TOKEN này với bất kỳ ai vì nó có thể cho phép người khác điều khiển bot của bạn.
+
+### Bật các Intent cần thiết
+
+1. Trong cùng trang của ứng dụng bot, chuyển đến phần **Bot**.
+2. Tìm mục **Privileged Gateway Intents**.
+
+   - **Presence Intent:**
+     - Bật **Presence Intent** để bot có thể nhận các sự kiện cập nhật trạng thái người dùng.
+     - Chú ý: Khi bot của bạn đạt 100 hoặc nhiều hơn server, việc bật tính năng này sẽ yêu cầu xác minh và phê duyệt từ Discord. Xem thêm chi tiết [tại đây](https://discord.com/developers/docs/topics/gateway#presence-update).
+
+   - **Server Members Intent:**
+     - Bật **Server Members Intent** để bot có thể nhận các sự kiện liên quan đến thành viên trong server.
+     - Chú ý: Khi bot của bạn đạt 100 hoặc nhiều hơn server, việc bật tính năng này sẽ yêu cầu xác minh và phê duyệt từ Discord. Xem thêm chi tiết [tại đây](https://discord.com/developers/docs/topics/gateway#guild-membership-screening).
+
+   - **Message Content Intent:**
+     - Bật **Message Content Intent** để bot có thể nhận nội dung tin nhắn trong hầu hết các tin nhắn.
+     - Chú ý: Khi bot của bạn đạt 100 hoặc nhiều hơn server, việc bật tính năng này sẽ yêu cầu xác minh và phê duyệt từ Discord. Xem thêm chi tiết [tại đây](https://discord.com/developers/docs/topics/gateway#message-content-intent).
+
+### Thay thế TOKEN vào mã nguồn
+
+1. Mở tệp mã nguồn của bot (ví dụ: `bot.mjs`).
+2. Tìm dòng chứa `client.login('YOUR_BOT_TOKEN');`.
+3. Thay thế `'YOUR_BOT_TOKEN'` bằng TOKEN mà bạn đã sao chép từ Discord Developer Portal:
+
+```js
+client.login('YOUR_BOT_TOKEN'); // Thay thế YOUR_BOT_TOKEN thành token bot của bạn
+
+```
+## Cách mời bot vào server Discord
+
+### 1. Tạo URL mời bot
+
+1. Truy cập vào [Discord Developer Portal](https://discord.com/developers/applications).
+2. Đăng nhập bằng tài khoản Discord của bạn nếu chưa đăng nhập.
+3. Chọn ứng dụng bot của bạn từ danh sách các ứng dụng.
+4. Trong menu bên trái, chọn **OAuth2**.
+5. Chọn tab **URL Generator** dưới phần OAuth2.
+
+### 2. Cấu hình quyền và phạm vi
+
+1. **Chọn phạm vi (Scopes):**
+   - Đánh dấu chọn **bot**. Đây là phạm vi cần thiết để thêm bot vào server.
+
+2. **Chọn quyền (Bot Permissions):**
+   - Trong phần **Bot Permissions**, chọn các quyền mà bot của bạn cần để hoạt động. Ví dụ:
+     - `Send Messages`: Để gửi tin nhắn.
+     - `Read Message History`: Để đọc lịch sử tin nhắn.
+     - `Manage Messages`: Để quản lý tin nhắn (xóa, ghim, v.v.).
+     - `View Channels`: Để xem các kênh.
+     - ``Attach Files``: Để gửi tệp đính kèm.
+     - `Add Reactions`: (Phản ứng) thêm biểu cảm vào các tin nhắn trong các kênh mà bot có quyền truy cập.
+     - Chọn các quyền khác nếu cần.
+     - Khuyến khích chọn quyền `Administrator`
+
+### 3. Tạo và sao chép URL
+
+1. Sau khi đã cấu hình các phạm vi và quyền, cuộn xuống dưới để thấy URL mời bot được tạo ra.
+2. Sao chép URL này.
+
+### 4. Mời bot vào server
+
+1. Mở một trình duyệt web và dán URL mà bạn đã sao chép vào thanh địa chỉ.
+2. Bạn sẽ được yêu cầu chọn server nơi bạn muốn mời bot vào.
+3. Chọn server từ danh sách thả xuống mà bạn có quyền quản lý (quyền quản trị hoặc quyền tương đương).
+4. Nhấp vào **Authorize** để gửi lời mời bot.
+5. Hoàn tất quá trình bằng cách giải CAPCHA nếu có yêu cầu.
+
+### 5.Kiểm tra quyền của bot
+ - Đảm bảo bot có đủ quyền truy cấp vào các kênh.
+ - Đảm bảo bot có thể xem tin nhắn,thêm phản ứng,...
