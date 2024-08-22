@@ -198,7 +198,7 @@ client.login('YOUR_BOT_TOKEN'); // Thay thế YOUR_BOT_TOKEN thành token bot c�
  - Đảm bảo bot có đủ quyền truy cấp vào các kênh.
  - Đảm bảo bot có thể xem tin nhắn,thêm phản ứng,...
 
-## Hướng dẫn mở Terminal và cài đặt npm packages trên Visual Studio Code
+## Mở Terminal và cài đặt npm packages trên Visual Studio Code
 
 ### 1. Mở Terminal trong Visual Studio Code
 
