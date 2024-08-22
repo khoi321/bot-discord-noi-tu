@@ -197,3 +197,140 @@ client.login('YOUR_BOT_TOKEN'); // Thay thế YOUR_BOT_TOKEN thành token bot c�
 ### 5.Kiểm tra quyền của bot
  - Đảm bảo bot có đủ quyền truy cấp vào các kênh.
  - Đảm bảo bot có thể xem tin nhắn,thêm phản ứng,...
+
+## Hướng dẫn mở Terminal và cài đặt npm packages trên Visual Studio Code
+
+### 1. Mở Terminal trong Visual Studio Code
+
+1. **Mở Visual Studio Code**:
+   - Khởi động Visual Studio Code từ Desktop hoặc từ menu Start (Windows) / Applications (macOS).
+
+2. **Mở Terminal**:
+   - **Cách 1**: Sử dụng phím tắt:
+     - Nhấn `Ctrl + `` (phím backtick, nằm ngay dưới phím Esc trên bàn phím) để mở terminal.
+   - **Cách 2**: Sử dụng menu:
+     - Vào menu **Terminal** ở thanh công cụ trên cùng.
+     - Chọn **New Terminal** từ danh sách thả xuống.
+
+### 2. Cài đặt npm packages
+
+1. **Xác nhận Node.js và npm đã được cài đặt**:
+   - Trong terminal, gõ các lệnh sau để kiểm tra phiên bản Node.js và npm:
+     ```bash
+     node -v
+     npm -v
+     ```
+   - Nếu bạn thấy thông tin phiên bản, có nghĩa là Node.js và npm đã được cài đặt. Nếu không, bạn cần cài đặt Node.js từ [trang web chính thức](https://nodejs.org/).
+
+2. **Điều hướng đến thư mục dự án**:
+   - Sử dụng lệnh `cd` để điều hướng đến thư mục chứa dự án của bạn. Ví dụ:
+     ```bash
+     cd đường_dẫn_tới_thư_mục_dự_án
+     ```
+
+3. **Cài đặt các package cần thiết**:
+   - Đảm bảo rằng bạn đã có một tệp `package.json` trong thư mục dự án. Tệp này chứa danh sách các package mà bạn cần cài đặt.
+   - Chạy lệnh sau để cài đặt tất cả các package được liệt kê trong `package.json`:
+     ```bash
+     npm install
+     ```
+   - Nếu bạn muốn cài đặt một package cụ thể, sử dụng lệnh:
+     ```bash
+     npm install tên-package
+     ```
+     Ví dụ, để cài đặt `discord.js`, bạn sẽ chạy:
+     ```bash
+     npm install discord.js
+     ```
+
+4. **Kiểm tra các package đã cài đặt**:
+   - Các package sẽ được cài đặt trong thư mục `node_modules` và danh sách các package sẽ được cập nhật trong tệp `package.json` và `package-lock.json`.
+
+### 3. Kiểm Tra Hoạt Động
+
+- **Kiểm Tra Các Package Đã Cài:**
+  - Bạn có thể kiểm tra các package đã được cài đặt bằng lệnh:
+    ```bash
+    npm list
+    ```
+  - Lệnh này sẽ liệt kê tất cả các package và phiên bản của chúng.
+
+- **Kiểm Tra Phiên Bản Node.js và npm:**
+  - Để đảm bảo bạn đang sử dụng phiên bản Node.js và npm đúng, bạn có thể kiểm tra phiên bản của chúng bằng các lệnh sau:
+    ```bash
+    node -v
+    npm -v
+    ```
+## Hướng Dẫn Sử Dụng Terminal Để Chạy Bot Discord Bằng Node.js Trên VS Code
+
+### 1. Mở Dự Án và Terminal
+
+1. **Mở VS Code:**
+   - Khởi động Visual Studio Code trên máy tính của bạn.
+
+2. **Mở Dự Án:**
+   - Mở dự án bot Discord của bạn bằng cách chọn **File** -> **Open Folder...** và điều hướng đến thư mục chứa dự án.
+
+3. **Mở Terminal:**
+   - Nhấn tổ hợp phím `Ctrl + `` (dấu huyền) để mở Terminal trong VS Code.
+   - Hoặc bạn có thể mở Terminal bằng cách vào menu **Terminal** -> **New Terminal**.
+
+### 2. Chạy Bot Discord
+
+1. **Chuyển Đến Thư Mục Dự Án:**
+   - Nếu bạn chưa ở trong thư mục dự án của mình, hãy sử dụng lệnh `cd` trong Terminal để chuyển đến thư mục chứa dự án:
+     ```bash
+     cd đường_dẫn_đến_thư_mục_dự_án
+     ```
+
+2. **Chạy Bot Bằng Node.js:**
+   - Để khởi chạy bot Discord, bạn sử dụng lệnh `node` để chạy file chính của bot.File chính là `bot.mjs` Ví dụ:
+     ```bash
+     node bot.mjs
+     ```
+     **hoặc**
+     ```bash
+     node .
+     ```
+   - Sau khi lệnh này được thực thi, bot của bạn sẽ hoạt động và bạn sẽ thấy thông báo trạng thái trong Terminal (nếu bot được cấu hình để in ra các trạng thái khi chạy).
+
+### 3. Kiểm Tra Hoạt Động Của Bot
+
+1. **Kiểm Tra Thông Báo Từ Bot:**
+   - Trong Terminal, bạn sẽ thấy các dòng thông báo khi bot của bạn khởi chạy thành công, chẳng hạn như:
+     ```
+     Ready!
+     Bot Started
+     Logged in as BotName#1234!
+     ```
+
+2. **Kết Nối Bot Với Server Discord:**
+   - Đảm bảo rằng bạn đã thêm bot của mình vào server Discord bằng cách tạo một URL mời và cấp quyền cho bot.
+   - Khi bot chạy thành công, nó sẽ bắt đầu hoạt động trên server mà bạn đã mời nó vào.
+
+3. **Dừng Bot:**
+   - Nếu bạn muốn dừng bot, bạn có thể nhấn tổ hợp phím `Ctrl + C` trong Terminal.
+
+### 4. Debug và Xử Lý Lỗi
+
+- **Kiểm Tra Lỗi:**
+  - Nếu bot không hoạt động như mong đợi hoặc gặp lỗi, các thông báo lỗi sẽ xuất hiện trong Terminal. Bạn có thể kiểm tra lỗi để biết cần sửa lỗi nào.
+
+- **Chỉnh Sửa Mã Lỗi:**
+  - Nếu gặp lỗi, hãy chỉnh sửa mã trong file bot của bạn, sau đó chạy lại lệnh `node bot.mjs` để khởi động lại bot.
+
+### 5. Tự Động Chạy Bot (Optional)
+
+- Nếu bạn muốn bot của mình tự động chạy lại khi có thay đổi, bạn có thể sử dụng công cụ như `nodemon`. Để cài đặt `nodemon`, hãy chạy lệnh:
+  ```bash
+  npm install -g nodemon
+  ```
+- Sau đó, bạn có thể khởi động bot bằng lệnh
+  ```
+  nodemon bot.mjs
+  ```
+- Lệnh này sẽ tự động khởi động lại bot mỗi khi bạn thay đổi mã.
+# Kết quả
+- Sau khi chạy `node .` trên Termina ở VS Code thì bạn sẽ thấy bot online.
+- Chạy lệnh `!!noitu` để cài đặt,
+- Chạy lệnh `!!resetnoitu` để reset nối từ.
