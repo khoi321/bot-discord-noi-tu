@@ -85,9 +85,9 @@ Bot nối từ Discord bằng tiếng Anh. Chạy trên ngôn ngữ JavaScript.
 # Chạy chương trình
 - **Chỉnh sửa trạng thái (status) của bot:**
   - **Trạng thái:**
-    - `status: 'online'`: Bot hoạt động bình thường.
-    - `status: 'idle'`: Bot không hoạt động hoặc đang chờ đợi.
-    - `status: 'dnd'`: Bot bận, không muốn bị làm phiền.
+    - `status: 'online'`: Bot hoạt động bình thường (xanh lá).
+    - `status: 'idle'`: Bot không hoạt động hoặc đang chờ đợi (vàng).
+    - `status: 'dnd'`: Bot bận, không muốn bị làm phiền (đỏ).
     - `status: 'invisible'`: Bot ẩn, không hiển thị trạng thái trực tuyến.
 
   - **Hoạt động:**
