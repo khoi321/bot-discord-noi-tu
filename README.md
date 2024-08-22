@@ -81,4 +81,4 @@ Bot nối từ Discord bằng tiếng Anh. Chạy trên ngôn ngữ JavaScript.
     - Nhấp chuột phải vào thư mục dự án.
     - Chọn **"Open with Code"** từ menu.
     - Thư mục dự án sẽ được mở trong VS Code.
-  - Tìm hiểu thêm về cách [sử dụng VS Code](https://www.youtube.com/results?search_query=c%C3%A1ch+m%E1%BB%9F+th%C6%B0+m%E1%BB%A5c+tr%C3%AAn+VS+code)
+  - Tìm hiểu thêm về [cách sử dụng VS Code](https://www.youtube.com/results?search_query=c%C3%A1ch+m%E1%BB%9F+th%C6%B0+m%E1%BB%A5c+tr%C3%AAn+VS+code)
