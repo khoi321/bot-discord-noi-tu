@@ -337,5 +337,29 @@ client.login('YOUR_BOT_TOKEN'); // Thay thế YOUR_BOT_TOKEN thành token bot c�
 # FAQ
 <details>
   <summary>Cách mở Terminal trên VS Code</summary>
-  Xem hướng dẫn [tại đây)[https://youtu.be/cDsXZ_PEDGk?si=k8pnks03kRx8-0QS]
+
+  Xem hướng dẫn [tại đây](https://youtu.be/cDsXZ_PEDGk?si=k8pnks03kRx8-0QS)
+
+</details>
+<details>
+  <summary>Cách cài VS Code</summary>
+
+  Xem hướng dẫn [tại đây](https://www.youtube.com/results?search_query=c%C3%A1ch+c%C3%A0i+vs+code+%2F+how+to+install+vs+code)
+
+</details>
+<details>
+  <summary>Cách cài môi trường</summary>
+
+  Xem hướng dẫn [tại đây](https://www.youtube.com/results?search_query=c%C3%A1ch+c%C3%A0i+%C4%91%E1%BA%B7t+m%C3%B4i+js+%2F+how+to+install+js+inviroment)
+
+</details>
+<details>
+  <summary>Tại sao bot không hoạt động</summary>
+
+  - Có một số lý do như:
+    - Sai token
+    - Chưa bật Intents
+    - Chưa cài môi trường
+    - ... 
+
 </details>
