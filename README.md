@@ -81,4 +81,39 @@ Bot nối từ Discord bằng tiếng Anh. Chạy trên ngôn ngữ JavaScript.
     - Nhấp chuột phải vào thư mục dự án.
     - Chọn **"Open with Code"** từ menu.
     - Thư mục dự án sẽ được mở trong VS Code.
-  - Tìm hiểu thêm về [cách sử dụng VS Code](https://www.youtube.com/results?search_query=c%C3%A1ch+m%E1%BB%9F+th%C6%B0+m%E1%BB%A5c+tr%C3%AAn+VS+code)
+  - Tìm hiểu thêm về cách [sử dụng VS Code](https://www.youtube.com/results?search_query=c%C3%A1ch+m%E1%BB%9F+th%C6%B0+m%E1%BB%A5c+tr%C3%AAn+VS+code)
+# Chạy chương trình
+- **Chỉnh sửa trạng thái (status) của bot:**
+  - **Trạng thái:**
+    - `status: 'online'`: Bot hoạt động bình thường.
+    - `status: 'idle'`: Bot không hoạt động hoặc đang chờ đợi.
+    - `status: 'dnd'`: Bot bận, không muốn bị làm phiền.
+    - `status: 'invisible'`: Bot ẩn, không hiển thị trạng thái trực tuyến.
+
+  - **Hoạt động:**
+    - `type: ActivityType.Playing`: Bot đang chơi một trò chơi.
+    - `type: ActivityType.Listening`: Bot đang nghe một thứ gì đó.
+    - `type: ActivityType.Watching`: Bot đang theo dõi một cái gì đó.
+    - `type: ActivityType.Streaming`: Bot đang phát trực tiếp.
+    - `type: ActivityType.Competing`: Bot đang tham gia vào một cuộc thi hoặc sự kiện.
+
+  - **Custom Status:**
+    - `name`: Tên trạng thái bạn muốn hiển thị, ví dụ: "waiting for love".
+    - `type`: Loại hoạt động của trạng thái, thay thế với một trong các giá trị sau:
+      - `ActivityType.Playing` để chơi một trò chơi.
+      - `ActivityType.Listening` để nghe một cái gì đó.
+      - `ActivityType.Watching` để theo dõi một cái gì đó.
+      - `ActivityType.Streaming` để phát trực tiếp.
+      - `ActivityType.Competing` để tham gia vào một cuộc thi hoặc sự kiện.
+    - `url`: URL để sử dụng khi `type` là `ActivityType.Streaming`. Nếu không phải `Streaming`, trường này có thể bỏ trống.
+
+```js
+client.user.setPresence({
+  status: 'idle', // Thay thế với trạng thái bạn muốn: 'online', 'idle', 'dnd', 'invisible'
+  activities: [{
+      name: 'waiting for love', // Thay thế với tên trạng thái bạn muốn hiển thị
+      type: ActivityType.Watching, // Thay thế với loại hoạt động bạn muốn: PLAYING, LISTENING, WATCHING, STREAMING, COMPETING
+      url: '' // Thêm URL nếu loại hoạt động là STREAMING, nếu không thì để trống
+  }],
+});
+```
