@@ -356,29 +356,36 @@ client.login('YOUR_BOT_TOKEN'); // Thay thế YOUR_BOT_TOKEN thành token bot c�
 - [Dictionary source](https://github.com/dwyl/english-words)
 - Thanks for the documentation
 # FAQ
+
 <details>
   <summary>Cách mở Terminal trên VS Code</summary>
-
   Xem hướng dẫn [tại đây](https://youtu.be/cDsXZ_PEDGk?si=k8pnks03kRx8-0QS)
-
 </details>
+
 <details>
   <summary>Cách cài VS Code</summary>
-
   Xem hướng dẫn [tại đây](https://www.youtube.com/results?search_query=c%C3%A1ch+c%C3%A0i+vs+code+%2F+how+to+install+vs+code)
-
 </details>
+
 <details>
   <summary>Cách cài môi trường</summary>
-
   Xem hướng dẫn [tại đây](https://www.youtube.com/results?search_query=c%C3%A1ch+c%C3%A0i+%C4%91%E1%BA%B7t+m%C3%B4i+js+%2F+how+to+install+js+inviroment)
-
 </details>
-<details>
-  <summary>Tại sao bot không hoạt động</summary>
 
-  - Có một số lý do như:
-    - Sai token
-    - Chưa bật Intents
-    - Chưa cài môi trường
-    - ... 
+# Cách host bot (bot online 24/7)
+- Các hosting
+  - **Sử dụng Máy Chủ (Server) Cá Nhân (ví dụ:máy tính của bạn,...)**
+    - **Máy tính cá nhân:** Bạn có thể chạy bot Discord từ máy tính cá nhân của mình. Điều này yêu cầu bạn phải giữ máy tính của mình bật và kết nối với internet 24/7
+      - **Ưu điểm:** Không mất phí hosting.
+      - **Nhược điểm:** Máy tính cần phải chạy liên tục.
+   - **Sử dụng Dịch Vụ Hosting Cloud**
+     - **Ưu điểm:** Không cần phải chạy trên máy mà chạy trên cloud.
+     - **Nhược điểm:** Cần phải trả phí (có vài hosting miễn phí)
+   - **Sử dụng Dịch Vụ VPS (Virtual Private Server)**
+     - **Ưu điểm:** Tùy chỉnh cao, tài nguyên riêng, khả năng mở rộng, ổn định và tin cậy, quyền truy cập root.
+     - **Nhược điểm:** Chi phí cao, yêu cầu quản lý server và kiến thức kỹ thuật, cần tối ưu hóa, rủi ro bảo mật nếu không bảo trì đúng cách.
+  - Cách host
+     - Tham khảo [cách host bot discord free](https://www.youtube.com/results?search_query=how+to+host+a+discord+bot+24%2F7+for+free&sp=CAI%253D)
+     - Tham khảo [hosting bot discord free](https://www.google.com/search?q=hosting+bot+discord+free&rlz=1C1GTPM_enVN1124VN1124&oq=hosting+bot+discord+free&gs_lcrp=EgZjaHJvbWUyCwgAEEUYExg5GIAEMgoIARAAGBMYFhgeMgoIAhAAGBMYFhgeMgoIAxAAGBMYFhgeMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg80gEHNDcyajBqOagCALACAQ&sourceid=chrome&ie=UTF-8)
+
+
