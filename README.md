@@ -14,8 +14,9 @@ Bot Nối Từ là một bot độc đáo cho phép người dùng tham gia vào
 - 
 ## Ví Dụ Về Các Lệnh
 
-- `!noitu` – Bắt đầu trò chơi mới.
-- `!resetnoitu` – Cài đặt lại trò chơi.
+- `!!noitu` – Bắt đầu trò chơi mới.
+- `!!resetnoitu` – Cài đặt lại trò chơi.
+- Sẽ cập nhật thêm...
 
 # Cài đặt
 - **Tải Project từ GitHub về máy:**
