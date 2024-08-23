@@ -388,4 +388,16 @@ client.login('YOUR_BOT_TOKEN'); // Thay thế YOUR_BOT_TOKEN thành token bot c�
      - Tham khảo [cách host bot discord free](https://www.youtube.com/results?search_query=how+to+host+a+discord+bot+24%2F7+for+free&sp=CAI%253D)
      - Tham khảo [hosting bot discord free](https://www.google.com/search?q=hosting+bot+discord+free&rlz=1C1GTPM_enVN1124VN1124&oq=hosting+bot+discord+free&gs_lcrp=EgZjaHJvbWUyCwgAEEUYExg5GIAEMgoIARAAGBMYFhgeMgoIAhAAGBMYFhgeMgoIAxAAGBMYFhgeMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg80gEHNDcyajBqOagCALACAQ&sourceid=chrome&ie=UTF-8)
 
+# Phiên bản
+|Version|Nội dung|Date|
+|-------|--------|----|
+|1.0.0  |New Upload|22/08/2024|  
 
+# Nền tảng hỗ trợ
+| Nền tảng          | Có | Không |
+|-------------------|----|-------|
+| IOS       |   |  ❌     |
+| Android       |    | ❌     |
+| Window       | ✔️  |       |
+| MacOS       | ✔️  |       |
+| Linux       | ✔️  |       |
