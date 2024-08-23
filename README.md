@@ -9,21 +9,13 @@ Bot Nối Từ là một bot độc đáo cho phép người dùng tham gia vào
 ### Tính Năng Chính
 
 - **Trò Chơi Nối Từ:** Tham gia vào trò chơi trong đó người chơi phải nối từ với nhau. Yêu cầu là từ mới phải bắt đầu bằng chữ cái cuối cùng của từ trước!
-- **Cài Đặt Tùy Chỉnh:** Tùy chỉnh quy tắc trò chơi để phù hợp với nhu cầu của máy chủ của bạn. Điều chỉnh độ dài từ, thêm quy tắc tùy chỉnh, và nhiều hơn nữa.
 - **Tương Tác Thực Thời:** Bot phản hồi nhanh chóng với các lệnh, đảm bảo trải nghiệm mượt mà và thú vị cho tất cả người dùng.
 - **Cài Đặt Dễ Dàng:** Được xây dựng bằng JavaScript và [discord.js](https://discord.js.org/), bot dễ dàng thiết lập và tích hợp vào máy chủ của bạn.
-
-## Cách Thêm Bot Vào Máy Chủ Của Bạn
-
-1. **Mời Bot:** Để thêm Bot Nối Từ vào máy chủ của bạn, nhấp vào [liên kết mời](#) và chọn máy chủ của bạn từ danh sách.
-2. **Cấp Quyền:** Cấp quyền cần thiết để bot hoạt động đúng cách.
-3. **Bắt Đầu Chơi:** Sử dụng lệnh `!startgame` để bắt đầu một trò chơi mới. Làm theo hướng dẫn của bot để bắt đầu.
-
+- 
 ## Ví Dụ Về Các Lệnh
 
-- `!startgame` – Bắt đầu một phiên trò chơi mới.
-- `!endgame` – Kết thúc trò chơi hiện tại.
-- `!stats` – Hiển thị thống kê và điểm số của trò chơi.
+- `!noitu` – Bắt đầu trò chơi mới.
+- `!resetnoitu` – Cài đặt lại trò chơi.
 
 # Cài đặt
 - **Tải Project từ GitHub về máy:**
