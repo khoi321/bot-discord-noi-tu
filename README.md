@@ -1,5 +1,29 @@
 # Giới thiệu chung
-Bot nối từ Discord bằng tiếng Anh. Chạy trên ngôn ngữ JavaScript.
+
+Chào mừng bạn đến với **Bot Nối Từ Discord**, một bot thú vị và tương tác được thiết kế để nâng cao sự tham gia của người dùng trong máy chủ Discord của bạn! Bot này được phát triển bằng ngôn ngữ JavaScript, sử dụng thư viện [discord.js](https://discord.js.org/) để tích hợp với Discord.
+
+## Bot Nối Từ Là Gì?
+
+Bot Nối Từ là một bot độc đáo cho phép người dùng tham gia vào trò chơi nối từ, trong đó các từ phải được kết nối dựa trên chữ cái cuối cùng của từ trước. Đây là một cách tuyệt vời để thử thách bạn bè và kiểm tra kỹ năng từ vựng trong khi vui vẻ trên máy chủ của bạn.
+
+### Tính Năng Chính
+
+- **Trò Chơi Nối Từ:** Tham gia vào trò chơi trong đó người chơi phải nối từ với nhau. Yêu cầu là từ mới phải bắt đầu bằng chữ cái cuối cùng của từ trước!
+- **Cài Đặt Tùy Chỉnh:** Tùy chỉnh quy tắc trò chơi để phù hợp với nhu cầu của máy chủ của bạn. Điều chỉnh độ dài từ, thêm quy tắc tùy chỉnh, và nhiều hơn nữa.
+- **Tương Tác Thực Thời:** Bot phản hồi nhanh chóng với các lệnh, đảm bảo trải nghiệm mượt mà và thú vị cho tất cả người dùng.
+- **Cài Đặt Dễ Dàng:** Được xây dựng bằng JavaScript và [discord.js](https://discord.js.org/), bot dễ dàng thiết lập và tích hợp vào máy chủ của bạn.
+
+## Cách Thêm Bot Vào Máy Chủ Của Bạn
+
+1. **Mời Bot:** Để thêm Bot Nối Từ vào máy chủ của bạn, nhấp vào [liên kết mời](#) và chọn máy chủ của bạn từ danh sách.
+2. **Cấp Quyền:** Cấp quyền cần thiết để bot hoạt động đúng cách.
+3. **Bắt Đầu Chơi:** Sử dụng lệnh `!startgame` để bắt đầu một trò chơi mới. Làm theo hướng dẫn của bot để bắt đầu.
+
+## Ví Dụ Về Các Lệnh
+
+- `!startgame` – Bắt đầu một phiên trò chơi mới.
+- `!endgame` – Kết thúc trò chơi hiện tại.
+- `!stats` – Hiển thị thống kê và điểm số của trò chơi.
 
 # Cài đặt
 - **Tải Project từ GitHub về máy:**
@@ -334,6 +358,10 @@ client.login('YOUR_BOT_TOKEN'); // Thay thế YOUR_BOT_TOKEN thành token bot c�
 - Sau khi chạy `node .` trên Termina ở VS Code thì bạn sẽ thấy bot online.
 - Chạy lệnh `!!noitu` để cài đặt,
 - Chạy lệnh `!!resetnoitu` để reset nối từ.
+# Nguồn - Copyright
+- [Nguồn từ điển](https://github.com/dwyl/english-words)
+- [Dictionary source](https://github.com/dwyl/english-words)
+- Thanks for the documentation
 # FAQ
 <details>
   <summary>Cách mở Terminal trên VS Code</summary>
@@ -361,5 +389,3 @@ client.login('YOUR_BOT_TOKEN'); // Thay thế YOUR_BOT_TOKEN thành token bot c�
     - Chưa bật Intents
     - Chưa cài môi trường
     - ... 
-
-</details>
