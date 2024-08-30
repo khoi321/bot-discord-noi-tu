@@ -1,3 +1,6 @@
+# English Version
+- See [here](https://github.com/khoi321/bot-discord-noi-tu/blob/main/README%20(ENG).md)
+
 # Giới thiệu chung
 
 Chào mừng bạn đến với **Bot Nối Từ Discord**, một bot thú vị và tương tác được thiết kế để nâng cao sự tham gia của người dùng trong máy chủ Discord của bạn! Bot này được phát triển bằng ngôn ngữ JavaScript, sử dụng thư viện [discord.js](https://discord.js.org/) để tích hợp với Discord.
